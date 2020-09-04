@@ -17,9 +17,22 @@ html(lang='en')
 
   body
     .wrapper
+      .mainblock
+          .mainblock__content
+            .container
+              a.mainblock__logo(href='')
+                img(src='../assets/img/logo.png' alt='')
+              .mainblock__text
+                .mainblock__title Clear, smart, attractive design 
+                .mainblock__subtitle for your app, logo, website
+              .mainblock__footer
+                a.mainblock__btn.btn.btn_w.goto(href='#content')
+                  span READ MORE
+                a.mainblock__arrow.goto(href='#content')
+                  img(src='../assets/img/icons/arrow-down.png' alt='')
+          .mainblock__image.ibg
+            img(src='../assets/img/mainblock/bg.jpg' alt='')
       
       
-      
-      
-        //- include ../includes/modules/foote
+          //- include ../includes/modules/foote
     block script
