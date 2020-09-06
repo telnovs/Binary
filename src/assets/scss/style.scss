@@ -58,9 +58,15 @@
    -moz-box-ordinal-group: $val;
    -ms-flex-order: $val;
    -webkit-order: $val;
-   order: $val;
+    order: $val;
 }
-@mixin flexboxinline(){display:-webkit-inline-flex;display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex;}
+@mixin flexboxinline(){
+   display:-webkit-inline-flex;
+   display:-moz-inline-flex;
+   display:-ms-inline-flex;
+   display:-o-inline-flex;
+   display:inline-flex;
+}
 
 //</МИКСИНЫ>===============================================================================================
 
@@ -371,8 +377,58 @@ h6 {
    50%{top: 10px;}
    100%{top: 0;}
 }
-//===================================
 
+//===================================================================================================================
+.menu {
+   padding: 22px 0;
+   border-bottom: 1px solid #f2f2f2;
+   &_mb{
+      margin: 0px 0px 130px 0px;
+      @media (max-width:$md2+px){
+         margin: 0px 0px 50px 0px;
+      }
+      @media (max-width:$md3+px){
+         margin: 0px 0px 30px 0px;
+      }
+   }
+   @media (max-width:$md4+px){
+      padding: 22px 0 12px 0;
+   }
+   // .menu__items
+   &__items {}
+   // .menu__list
+   &__list {
+      @include flexbox();
+      justify-content:center;
+      align-items: center;
+      li{margin: 0px 25px;
+         @media (max-width:$md3+px){
+            margin: 0px 15px 10px 15px;
+         }
+         @media (max-width:$md3+px){
+            flex: 0 1 25%;
+         }
+      }
+      @media (max-width:$md4+px){
+         flex-wrap: wrap;
+      }
+   }
+   // .menu__link
+   &__link {
+      color: #3c3c3c;
+      font-size: 15px;
+      text-transform: uppercase;
+      font-weight: 700;
+      @include anim(0.3s,0s);
+      &:hover{
+         color: #ada074;
+      }
+      &_act {
+         color: #ada074;
+      }
+   }
+}
+//==================================================================
 //===================================
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 // @import "./utils/popup.scss";
@@ -383,6 +439,9 @@ h6 {
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 //====================================================================================================
 .content {
+   background-color: #fff;
+   position: relative;
+   z-index: 50;
 }
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 

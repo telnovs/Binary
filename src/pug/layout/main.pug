@@ -18,21 +18,146 @@ html(lang='en')
   body
     .wrapper
       .mainblock
-          .mainblock__content
-            .container
-              a.mainblock__logo(href='')
-                img(src='../assets/img/logo.png' alt='')
-              .mainblock__text
-                .mainblock__title Clear, smart, attractive design 
-                .mainblock__subtitle for your app, logo, website
-              .mainblock__footer
-                a.mainblock__btn.btn.btn_w.goto(href='#content')
-                  span READ MORE
-                a.mainblock__arrow.goto(href='#content')
-                  img(src='../assets/img/icons/arrow-down.png' alt='')
-          .mainblock__image.ibg
-            img(src='../assets/img/mainblock/bg.jpg' alt='')
-      
-      
-          //- include ../includes/modules/foote
+        .mainblock__content
+          .container
+            a.mainblock__logo(href='')
+              img(src='../assets/img/logo.png' alt='')
+            .mainblock__text
+              .mainblock__title Clear, smart, attractive design 
+              .mainblock__subtitle for your app, logo, website
+            .mainblock__footer
+              a.mainblock__btn.btn.btn_w.goto(href='#content')
+                span READ MORE
+              a.mainblock__arrow.goto(href='#content')
+                img(src='../assets/img/icons/arrow-down.png' alt='')
+        .mainblock__image.ibg
+          img(src='../assets/img/mainblock/bg.jpg' alt='')
+      .content
+        .menu.menu_mb
+          .container
+            nav.menu__items
+              ul.menu__list
+                li
+                  a.menu__link.menu__link_act(href='#') HOME
+                li
+                  a.menu__link(href='#') ABOUT US
+                li
+                  a.menu__link(href='#') PORTFOLIO
+                li
+                  a.menu__link(href='#') CONTACT
+      //-   .about
+      //-     .container
+      //-       .about__header-block.header-block
+      //-         .header-block__title ABOUT
+      //-         .header-block__subtitle
+      //-           | We specialize in contemporary, functional, and stunning websites with design that really brings that &quot;WOW&quot; factor. In our design process, we make sure to stay one step ahead of the latest trends, never forgetting to abide by key web standards.
+      //-       .about__body
+      //-         .about__row
+      //-           .about__column
+      //-             .about__item
+      //-               .about__icon
+      //-                 img(src='../assets/img/about/01.png' alt='')
+      //-               .about__title WEB
+      //-               .about__text
+      //-                 | We tend to deliver unique and functional design, through innovation and creativity.
+      //-           .about__column
+      //-             .about__item
+      //-               .about__icon
+      //-                 img(src='../assets/img/about/02.png' alt='')
+      //-               .about__title iOS AND ANDROID
+      //-               .about__text
+      //-                 | We seek to bring new businesses and customers closer together through valuable insights and proper targeting.
+      //-           .about__column
+      //-             .about__item
+      //-               .about__icon.about__icon_l
+      //-                 img(src='../assets/img/about/03.png' alt='')
+      //-               .about__title MARKETING
+      //-               .about__text
+      //-                 | We&rsquo;ll help you establish the right goals and build the right paths. Success depends on setting the right intention.
+      //-   .portfolio
+      //-     .container
+      //-       .portfolio__header-block.header-block
+      //-         .header-block__title PORTFOLIO
+      //-       nav.portfolio__filter.filter
+      //-         ul.filter__list
+      //-           li.filter__item.active(data-filter='1') ALL
+      //-           li.filter__item(data-filter='2') WEB
+      //-           li.filter__item(data-filter='3') APPS
+      //-           li.filter__item(data-filter='4') OTHER
+      //-       .portfolio__items.gallery
+      //-         .portfolio__column.f_2
+      //-           a.portfolio__item(href='../assets/img/portfolio/01.png')
+      //-             img(src='../assets/img/portfolio/01.png' alt='')
+      //-         .portfolio__column.f_2
+      //-           a.portfolio__item(href='../assets/img/portfolio/02.png')
+      //-             img(src='../assets/img/portfolio/02.png' alt='')
+      //-         .portfolio__column.f_2
+      //-           a.portfolio__item(href='../assets/img/portfolio/01.png')
+      //-             img(src='../assets/img/portfolio/01.png' alt='')
+      //-         .portfolio__column.f_3
+      //-           a.portfolio__item(href='../assets/img/portfolio/02.png')
+      //-             img(src='../assets/img/portfolio/02.png' alt='')
+      //-         .portfolio__column.f_4
+      //-           a.portfolio__item(href='../assets/img/portfolio/01.png')
+      //-             img(src='../assets/img/portfolio/01.png' alt='')
+      //-         .portfolio__column.f_4
+      //-           a.portfolio__item(href='../assets/img/portfolio/02.png')
+      //-             img(src='../assets/img/portfolio/02.png' alt='')
+      //-         .portfolio__column.f_4
+      //-           a.portfolio__item(href='../assets/img/portfolio/01.png')
+      //-             img(src='../assets/img/portfolio/01.png' alt='')
+      //-         .portfolio__column.f_4
+      //-           a.portfolio__item(href='../assets/img/portfolio/02.png')
+      //-             img(src='../assets/img/portfolio/02.png' alt='')
+      //-       .portfolio__footer
+      //-         a.portfolio__btn.btn.btn_b(href='')
+      //-           span READ MORE
+      //-   .partners
+      //-     .container
+      //-       .partners__title Our partners
+      //-       .partners__items
+      //-         .partners__column
+      //-           .partners__item
+      //-             img(src='../assets/img/partners/01.png' alt='')
+      //-         .partners__column
+      //-           .partners__item
+      //-             img(src='../assets/img/partners/02.png' alt='')
+      //-         .partners__column
+      //-           .partners__item
+      //-             img(src='../assets/img/partners/03.png' alt='')
+      //-         .partners__column
+      //-           .partners__item
+      //-             img(src='../assets/img/partners/04.png' alt='')
+      //-   .contacts
+      //-     .container
+      //-       .contacts__header-block.header-block
+      //-         .header-block__title CONTACT
+      //-       .contacts__body
+      //-         .contacts__column
+      //-           form.contacts__form.form-contacts(action='#')
+      //-             .form-contacts__body
+      //-               .form-contacts__row
+      //-                 .form-contacts__column
+      //-                   .form-contacts__input
+      //-                     .form-contacts__label YOUR NAME
+      //-                     input.input.req(autocomplete='off' type='text' name='form[]' data-value='')
+      //-                 .form-contacts__column
+      //-                   .form-contacts__input
+      //-                     .form-contacts__label YOUR E-MAIL
+      //-                     input.input.req.email(autocomplete='off' type='text' name='form[]' data-value='')
+      //-               .form-contacts__input
+      //-                 .form-contacts__label MESSAGE
+      //-                 textarea.input(autocomplete='off' name='form[]' data-value='')
+      //-               button.form-contacts__btn.btn.btn_b(type='submit')
+      //-                 span SEND
+      //-         .contacts__column
+      //-           .contacts__content
+      //-             .contacts__text
+      //-               | Have an idea for a project? Just looking to explore and see the possibilities? I&apos;m here to help.
+      //-             .contacts__name Postma Elena
+      //-             .contacts__social.social
+      //-               a.social__item(href='')
+      //-                 img(src='../assets/img/icons/social/01.svg' alt='')
+      //-               a.social__item(href='')
+      //-                 img(src='../assets/img/icons/social/02.svg' alt='')
     block script
