@@ -508,8 +508,8 @@ h6 {
       line-height: 26px;
    }
 }
-//===================================================
-//===================================
+//====================================
+
 .about {
    padding: 0px 0px 60px 0px;
    @media (max-width:$md3+px){
@@ -589,6 +589,90 @@ h6 {
       line-height: 26px;
    }
 }
+//================================
+.portfolio {
+   background-color: #f3f3f3;
+   padding: 105px 0px 60px 0px;
+   @media (max-width:$md2+px){
+      padding: 50px 0px 40px 0px;
+   }
+   // .portfolio__header-block
+   &__header-block {
+      margin: 0px 0px 50px 0px;
+      @media (max-width:$md2+px){
+         margin: 0px 0px 30px 0px;
+      }
+      @media (max-width:$md3+px){
+         margin: 0px 0px 20px 0px;
+      }     
+   }
+   // .portfolio__filter
+   &__filter {
+      margin: 0px 0px 135px 0px;
+      @media (max-width:$md2+px){
+         margin: 0px 0px 50px 0px;
+      }
+      @media (max-width:$md3+px){
+         margin: 0px 0px 20px 0px;
+      }
+   }
+   // .portfolio__items
+   &__items {
+      @include flexbox();
+      margin: 0px -15px;
+      flex-wrap: wrap;
+   }
+   // .portfolio__column
+   &__column {
+      flex: 0 1 50%;
+      max-width: 50%;
+      padding: 0px 15px;
+      margin: 0px 0px 30px 0px;
+      @media (max-width:$md3+px){
+         flex: 1 1 100%;
+         margin: 0px 0px 20px 0px;
+      }
+   }
+   // .portfolio__item
+   &__item {
+      img{max-width: 100%;}
+   }
+   // .portfolio__footer
+   &__footer {
+      padding: 35px 0px 0px 0px;
+      text-align: center;
+      @media (max-width:$md3+px){
+         padding: 15px 0px 0px 0px;
+      }
+   }
+   // .portfolio__btn
+   &__btn {}
+}
+.filter {
+   // .filter__list
+   &__list {
+      @include flexbox();
+      justify-content:center;
+      align-items: center;
+   }
+   // .filter__item
+   &__item {
+      color: #3c3c3c;
+      font-size: 15px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin: 0px 25px;
+      cursor: pointer;
+      &.active{
+         color: #ada074;
+      }
+      @media (max-width:$md3+px){
+         margin: 0px 15px;
+      }
+   }
+}
+
+//================================
 //===================================================
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 // @import "./utils/popup.scss";
