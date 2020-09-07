@@ -198,21 +198,26 @@ h6 {
 //</ОБОЛОЧКА>===========================================================================================================
 
 //<ОСНОВНАЯ СЕТКА>===========================================================================================================
-.container {
-   max-width: $mw + px;
-   padding: 0px 15px;
-   margin: 0 auto;
-   width: 100%;
-   @media (max-width: $md1+px) {
-      max-width: 970px;
-   }
-   @media (max-width: $md2+px) {
-      max-width: 750px;
-   }
-   @media (max-width: $md3+px) {
-      max-width: none;
-      padding: 0 10px;
-   }
+// .container {
+//    max-width: $mw + px;
+//    padding: 0px 15px;
+//    margin: 0 auto;
+//    width: 100%;
+//    @media (max-width: $md1+px) {
+//       max-width: 970px;
+//    }
+//    @media (max-width: $md2+px) {
+//       max-width: 750px;
+//    }
+//    @media (max-width: $md3+px) {
+//       max-width: none;
+//       padding: 0 10px;
+//    }
+// }
+.container{max-width:$mw+px;margin: 0 auto;width: 100%;
+   @media (max-width:$md1+px){max-width: 970px;}
+   @media (max-width:$md2+px){max-width: 750px;}
+   @media (max-width:$md3+px){max-width: none;padding:0 10px;}
 }
 //<BUTTONS>====================================================================================================
 .btn{
@@ -508,87 +513,40 @@ h6 {
       line-height: 26px;
    }
 }
-//====================================
-
-.about {
-   padding: 0px 0px 60px 0px;
-   @media (max-width:$md3+px){
-      padding: 0px 0px 10px 0px;
-   }
-   // .about__header-block
-   &__header-block {
-      margin: 0px 0px 65px 0px;
-      @media (max-width:$md3+px){
-         margin: 0px 0px 30px 0px;
-      }
-   }
-   // .about__body
-   &__body {
-      text-align: center;
-      max-width: 900px;
-      margin: 0px auto;
-   }
-   // .about__row
-   &__row {
-      @include flexbox();
-      margin: 0px -15px;
-      @media (max-width:$md3+px){
-         display: block;
-      }
-   }
-   // .about__column
-   &__column {
-      margin: 0px 0px 30px 0px;
-      flex: 0 1 33.333%;
-      padding: 0px 15px;
-   }
-   // .about__item
-   &__item {
-      text-align: center;
-      max-width: 260px;
-      @media (max-width:$md3+px){
-         max-width: none;
-      }
-   }
-   // .about__icon
-   &__icon {
-      border-radius: 50%;
-      border: 1px solid #f2f2f2;
-      width: 92px;
-      height: 92px;
-      @include flexboxinline();
-      justify-content:center;
-      align-items: center;
-      margin: 0px 0px 40px 0px;
-      &_l{
-         img{position: relative;left: 5px;}
-      }
-      @media (max-width:$md3+px){
-         margin: 0px 0px 15px 0px;
-      }
-   }
-   // .about__title
+//================================
+.header-block {
+   text-align: center;
+   // .header-block__title
    &__title {
-      margin: 0px 0px 33px 0px;
-      font-size: 22px;
+      font-size: 34px;
+      font-weight: 700;
+      letter-spacing: 8.95px;
       text-transform: uppercase;
-      letter-spacing: 3.52px;
-      @media (max-width:$md2+px){
-         font-size: 18px;
-         margin: 0px 0px 25px 0px;
-      }
-      @media (max-width:$md3+px){
-         margin: 0px 0px 15px 0px;
+      position: relative;
+      padding: 0px 0px 30px 0px;
+      &:after{
+         content:'';
+         width: 81px;
+         height: 1px;
+         position: absolute;
+         left: 50%;
+         bottom: 0;
+         margin: 0px 0px 0px -40.5px;
+         background-color: #000000;
       }
    }
-   // .about__text
-   &__text {
+   // .header-block__subtitle
+   &__subtitle {
+      padding: 30px 0px 0px 0px;
       color: #868585;
       font-size: 14px;
       font-weight: 300;
-      line-height: 26px;
+      line-height: 25.89px;
+      max-width: 700px;
+      margin: 0px auto;
    }
 }
+
 //================================
 .portfolio {
    background-color: #f3f3f3;
@@ -671,7 +629,43 @@ h6 {
       }
    }
 }
-
+//================================
+.partners {
+   background: url('../img/partners/bg.jpg') center / cover no-repeat;
+   padding: 100px 0 70px 0;
+   @media (max-width:$md3+px){
+      padding: 30px 0 0px 0;
+   }
+   // .partners__title
+   &__title {
+      font-size: 30px;
+      color: #fff;
+      text-align: center;
+      font-weight: 300;
+      margin: 0px 0px 90px 0px;
+      @media (max-width:$md3+px){
+         margin: 0px 0px 30px 0px;
+      }
+   }
+   // .partners__items
+   &__items {
+      flex-wrap: wrap;
+      @include flexbox();
+      justify-content:center;
+      text-align: center;
+      align-items: center;
+   }
+   // .partners__column
+   &__column {
+      padding: 0px 50px;
+      margin: 0px 0px 30px 0px;
+      @media (max-width:$md3+px){
+         padding: 0px 30px;
+      }
+   }
+   // .partners__item
+   &__item {}
+}
 //================================
 //===================================================
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
