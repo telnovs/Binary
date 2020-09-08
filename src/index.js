@@ -1,5 +1,6 @@
 // JS
 import './js/'
+import './components/js/baguetteBox.js'
 
 
 // SCSS

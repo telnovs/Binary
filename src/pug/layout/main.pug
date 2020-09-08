@@ -84,7 +84,7 @@ html(lang='en')
                 li.filter__item(data-filter='2') WEB
                 li.filter__item(data-filter='3') APPS
                 li.filter__item(data-filter='4') OTHER
-            .portfolio__items.gallery
+            .portfolio__items
               .portfolio__column.f_2
                 a.portfolio__item(href='../assets/img/portfolio/01.png')
                   img(src='../assets/img/portfolio/01.png' alt='')
@@ -128,36 +128,37 @@ html(lang='en')
               .partners__column
                 .partners__item
                   img(src='../assets/img/partners/04.png' alt='')
-        //- .contacts
-        //-   .container
-        //-     .contacts__header-block.header-block
-        //-       .header-block__title CONTACT
-        //-     .contacts__body
-        //-       .contacts__column
-        //-         form.contacts__form.form-contacts(action='#')
-        //-           .form-contacts__body
-        //-             .form-contacts__row
-        //-               .form-contacts__column
-        //-                 .form-contacts__input
-        //-                   .form-contacts__label YOUR NAME
-        //-                   input.input.req(autocomplete='off' type='text' name='form[]' data-value='')
-        //-               .form-contacts__column
-        //-                 .form-contacts__input
-        //-                   .form-contacts__label YOUR E-MAIL
-        //-                   input.input.req.email(autocomplete='off' type='text' name='form[]' data-value='')
-        //-             .form-contacts__input
-        //-               .form-contacts__label MESSAGE
-        //-               textarea.input(autocomplete='off' name='form[]' data-value='')
-        //-             button.form-contacts__btn.btn.btn_b(type='submit')
-        //-               span SEND
-        //-       .contacts__column
-        //-         .contacts__content
-        //-           .contacts__text
-        //-             | Have an idea for a project? Just looking to explore and see the possibilities? I&apos;m here to help.
-        //-           .contacts__name Postma Elena
-        //-           .contacts__social.social
-        //-             a.social__item(href='')
-        //-               img(src='../assets/img/icons/social/01.svg' alt='')
-        //-             a.social__item(href='')
-        //-               img(src='../assets/img/icons/social/02.svg' alt='')
+        .contacts
+          .container
+            .contacts__header-block.header-block
+              .header-block__title CONTACT
+            .contacts__body
+              .contacts__column
+                form.contacts__form.form-contacts(action='#')
+                  .form-contacts__body
+                    .form-contacts__row
+                      .form-contacts__column
+                        .form-contacts__input
+                          .form-contacts__label YOUR NAME
+                          input.input.req(autocomplete='off' type='text' name='form[]' data-value='')
+                      .form-contacts__column
+                        .form-contacts__input
+                          .form-contacts__label YOUR E-MAIL
+                          input.input.req.email(autocomplete='off' type='text' name='form[]' data-value='')
+                    .form-contacts__input
+                      .form-contacts__label MESSAGE
+                      textarea.input(autocomplete='off' name='form[]' data-value='')
+                    button.form-contacts__btn.btn.btn_b(type='submit')
+                      span SEND
+              .contacts__column
+                .contacts__content
+                  .contacts__text
+                    | Have an idea for a project? Just looking to explore and see the possibilities? I&apos;m here to help.
+                  .contacts__name Postma Elena
+                  .contacts__social.social
+                    a.social__item(href='')
+                      img(src='../assets/img/icons/social/01.svg' alt='')
+                    a.social__item(href='')
+                      img(src='../assets/img/icons/social/02.svg' alt='')
     block script
+      
